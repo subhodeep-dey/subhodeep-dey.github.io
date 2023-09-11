@@ -6,7 +6,7 @@
     <title>Subhodeep Dey</title>
     <style>
         body {
-            padding: 100px;
+            padding: 100px; /* Equal spacing on both left and right */
             font-family: 'Roboto Mono', Helvetica, Arial, sans-serif, monospace;
         }
 
@@ -14,15 +14,56 @@
             font-size: 15px;
             font-weight: normal;
         }
-      p {
-        font-size: 24px; /* Slightly larger font size */
+
+        p {
+            font-size: 24px; /* Slightly larger font size */
             font-weight: 400; /* Font weight 400 */
-      }
+        }
+
+        /* Style the navigation links */
+        nav {
+            text-align: left; /* Align the navigation links to the left */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: blue; /* Blue color for the links */
+            margin-right: 10px; /* Add some spacing between the links */
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+        }
+
+        nav a:hover {
+            color: white; /* Change text color to white on hover */
+            background-color: blue; /* Add a blue background on hover */
+            padding: 5px 10px; /* Add padding to create a box effect on hover */
+            border-radius: 5px; /* Add rounded corners */
+        }
+
+        /* Style the separator span */
+        .u-separate::before {
+            content: "/"; /* Display a slash between links */
+            color: black; /* Color of the separator */
+        }
+      /* Style the footer */
+        footer {
+            text-align: right; /* Align to the right */
+            font-size: 20px; /* Font size */
+            font-weight: 100; /* Thin font weight */
+            color: #5C6E74; /* Color */
+            padding: 10px 20px; /* Padding for spacing */
+        }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <small>Black Heretic</small>
-   <p>Hello, I'm Subhodeep. My writing revolves around topics such as React, Flutter, and various computer-related stuffs.</p>
+    <p>Hello, I'm Subhodeep. My writing revolves around topics such as React, Flutter, and various computer-related stuffs.</p>
+   <nav>
+         <a href="#">Home</a><span class="u-separate"></span>
+        <a href="#">Projects</a><span class="u-separate"></span>
+        <a href="#">About</a>
+    </nav>
+  <footer>© Subhodeep Dey 2023</footer>
 </body>
 </html>
