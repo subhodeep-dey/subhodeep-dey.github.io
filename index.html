@@ -6,7 +6,7 @@
     <title>Subhodeep Dey</title>
     <style>
         body {
-            padding: 100px; /* Equal spacing on both left and right */
+            padding: 100px; /* Add padding for better spacing on small screens */
             font-family: 'Roboto Mono', Helvetica, Arial, sans-serif, monospace;
         }
 
@@ -16,8 +16,8 @@
         }
 
         p {
-            font-size: 24px; /* Slightly larger font size */
-            font-weight: 400; /* Font weight 400 */
+            font-size: 18px; /* Reduce font size for better readability on small screens */
+            font-weight: 400;
         }
 
         /* Style the navigation links */
@@ -48,9 +48,10 @@
         /* Style the footer container */
         footer {
             display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Wrap items for smaller screens */
             justify-content: space-between; /* Space between items */
             align-items: center; /* Vertically center items */
-            font-size: 20px; /* Font size */
+            font-size: 18px; /* Font size */
             font-weight: 100; /* Thin font weight */
             color: #5C6E74; /* Color */
             margin-top: 20px; /* Add margin to the top */
@@ -59,12 +60,13 @@
         /* Style the social links */
         .social-links {
             text-align: right; /* Align to the right */
+            margin-top: 10px; /* Add some spacing between social links and copyright */
         }
 
         .social-links a {
             text-decoration: none;
             color: blue; /* Blue color for the links */
-            
+            margin-left: 5px; /* Reduce the margin to adjust the gap */
             transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
         }
 
@@ -74,23 +76,43 @@
             padding: 5px 10px; /* Add padding to create a box effect on hover */
             border-radius: 5px; /* Add rounded corners */
         }
-    </style>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
 
+        /* Media query for screens smaller than 768px (tablets and mobile) */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px; /* Adjust padding for smaller screens */
+            }
+
+            p {
+                font-size: 16px; /* Adjust font size for better readability */
+            }
+
+            footer {
+                flex-direction: column; /* Stack items vertically */
+                text-align: center; /* Center-align the text in the footer */
+            }
+
+            .social-links {
+                text-align: center; /* Center-align the social links */
+                margin-top: 10px; /* Add some spacing between social links and copyright */
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <small>Black Heretic</small>
     <p>Hello, I'm Subhodeep. My writing revolves around topics such as React, Flutter, and various computer-related stuffs.</p>
-   <nav>
-         <a href="#">Home</a><span class="u-separate"></span>
+    <nav>
+        <a href="#">Home</a><span class="u-separate"></span>
         <a href="#">Projects</a><span class="u-separate"></span>
         <a href="#">About</a>
     </nav>
-  <footer>
-    &copy; Subhodeep Dey 2023
-    <div class="social-links">
-        <a href="#">Twitter</a> <span class="u-separate"></span> <a href="#">Github</a>
-    </div>
-  </footer>
+    <footer>
+        &copy; Subhodeep Dey 2023
+        <div class="social-links">
+            <a href="#">Twitter</a> <span class="u-separate"></span> <a href="#">Github</a>
+        </div>
+    </footer>
 </body>
 </html>
