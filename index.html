@@ -44,13 +44,35 @@
             content: "/"; /* Display a slash between links */
             color: black; /* Color of the separator */
         }
-      /* Style the footer */
+
+        /* Style the footer container */
         footer {
-            text-align: right; /* Align to the right */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Vertically center items */
             font-size: 20px; /* Font size */
             font-weight: 100; /* Thin font weight */
             color: #5C6E74; /* Color */
-            padding: 10px 20px; /* Padding for spacing */
+            margin-top: 20px; /* Add margin to the top */
+        }
+
+        /* Style the social links */
+        .social-links {
+            text-align: right; /* Align to the right */
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: blue; /* Blue color for the links */
+            
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+        }
+
+        .social-links a:hover {
+            color: white; /* Change text color to white on hover */
+            background-color: blue; /* Add a blue background on hover */
+            padding: 5px 10px; /* Add padding to create a box effect on hover */
+            border-radius: 5px; /* Add rounded corners */
         }
     </style>
      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
@@ -64,6 +86,12 @@
         <a href="#">Projects</a><span class="u-separate"></span>
         <a href="#">About</a>
     </nav>
-  <footer>© Subhodeep Dey 2023</footer>
+  <footer>
+    &copy; Subhodeep Dey 2023
+    <div class="social-links">
+        <a href="#">Twitter</a><span class="u-separate"></span>
+        <a href="#">Github</a>
+    </div>
+  </footer>
 </body>
 </html>
