@@ -267,6 +267,7 @@ iframe {
     color: black; /* Set the text color to black */
     border: 1px solid black; /* Add a black border */
     padding: 5px 5px; /* Add padding for better appearance */
+  margin-left: 10px; 
     cursor: pointer; /* Change the cursor to a pointer on hover */
     transition: background-color 0.3s, color 0.3s; /* Add a transition effect */
   font-size: 16px;
@@ -285,4 +286,12 @@ iframe {
     font-size: 16px; /* Set the font size to 16px (you can adjust this as needed) */
     height: 18px; /* Set the height to match the submit button */
     vertical-align: middle; /* Align the text vertically in the middle */
+}
+
+/* Style for the input row */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* Add margin to separate from the heading */
 }
