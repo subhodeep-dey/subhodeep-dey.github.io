@@ -76,28 +76,38 @@
             border-radius: 5px; /* Add rounded corners */
         }
 
-        /* Media query for screens smaller than 768px (tablets and mobile) */
-        @media (max-width: 768px) {
-            body {
-                padding: 20px; /* Adjust padding for smaller screens */
-            }
+  @media (max-width: 768px) {
+    body {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
 
-            p {
-                font-size: 16px; /* Adjust font size for better readability */
-            }
+    p {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
 
-            footer {
-                flex-direction: column; /* Stack items vertically */
-                text-align: center; /* Center-align the text in the footer */
-            }
+    footer {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align the text in the footer */
+    }
 
-            .social-links {
-                text-align: center; /* Center-align the social links */
-            }
-        }
+    .social-links {
+        text-align: center; /* Center-align the social links */
+    }
+}
+
+/* Centered Substack Widget Container (outside of the media query) */
+.widget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Adjust the height as needed */
+    margin-top: 20px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
+}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
-</head>
+</head> 
 <body>
     <small>Black Heretic</small>
     <p>Hello, I'm Subhodeep. My writing revolves around topics such as React, Flutter, and various computer-related stuffs.</p>
@@ -106,6 +116,28 @@
         <a href="#">Projects</a><span class="u-separate"></span>
         <a href="#">About</a>
     </nav>
+
+    <!-- Centered Substack Widget Container -->
+    <div class="widget-container">
+        <div id="custom-substack-embed"></div>
+        <script>
+          window.CustomSubstackWidget = {
+            substackUrl: "sdeysocial.substack.com",
+            placeholder: "example@gmail.com",
+            buttonText: "Subscribe",
+            theme: "custom",
+            colors: {
+              primary: "#000000",
+              input: "#FFFFFF",
+              email: "#000000",
+              text: "#FFFFFF",
+            }
+          };
+        </script>
+        <script src="https://substackapi.com/widget.js" async></script>
+    </div>
+    <!-- End of Centered Substack Widget Container -->
+
     <footer>
         &copy; Subhodeep Dey 2023 
         <div class="social-links">
