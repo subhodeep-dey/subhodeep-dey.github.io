@@ -102,3 +102,20 @@
             font-weight: bold;
             margin-bottom: 20px;
         }
+
+/* About section CSS */
+.about-heading {
+    color: #163541;
+    line-height: 1.5;
+    font-weight: 400;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.about-paragraph {
+    color: #5C6E74;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
