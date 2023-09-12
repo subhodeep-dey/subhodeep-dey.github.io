@@ -225,14 +225,14 @@ pre code {
             border-radius: 8px; /* Rounded corners for the image */
         }
 
-        /* Style for the image caption */
-        .image-caption {
-            font-size: 12px; /* Adjust the font size as needed */
-            margin-top: 5px; /* Add some margin to separate it from the image */
-            color: #5C6E74;
-            font-weight: 400;
-            align-items: center;
-        }
+     .image-caption {
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-top: 5px; /* Add some margin to separate it from the image */
+    color: #5C6E74;
+    font-weight: 400;
+    text-align: center; /* Center align the caption */
+    flex-grow: 1; /* Allow the caption to grow and take available space vertically */
+}
 
 
 /* Projects section CSS */
