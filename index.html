@@ -16,7 +16,7 @@
         }
 
         p {
-            font-size: 24px; /* Reduce font size for better readability on small screens */
+            font-size: 24px;
             font-weight: 400;
         }
 
@@ -51,7 +51,7 @@
             flex-wrap: wrap; /* Wrap items for smaller screens */
             justify-content: space-between; /* Space between items */
             align-items: center; /* Vertically center items */
-            font-size: 18px; /* Font size */
+            font-size: 15px; /* Font size */
             font-weight: 100; /* Thin font weight */
             color: #5C6E74; /* Color */
             margin-top: 20px; /* Add margin to the top */
@@ -97,14 +97,24 @@
 
 /* Centered Substack Widget Container (outside of the media query) */
 .widget-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh; /* Adjust the height as needed */
-    margin-top: 20px; /* Add space at the top */
-    margin-bottom: 20px; /* Add space at the bottom */
-}
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            justify-content: center;
+            height: 50vh;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid black; /* Add a border */
+            border-radius: 5px; /* Add rounded corners */
+            padding: 20px; /* Add padding */
+        }
+      /* Style the subscription text */
+        .subscription-text {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 20px; /* Add margin at the bottom */
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
 </head> 
@@ -118,25 +128,30 @@
     </nav>
 
     <!-- Centered Substack Widget Container -->
-    <div class="widget-container">
-        <div id="custom-substack-embed"></div>
-        <script>
-          window.CustomSubstackWidget = {
+<div class="widget-container">
+  <strong class="subscription-text">Subscribe to my newsletter</strong>
+    <div id="custom-substack-embed"></div>
+    <small style="font-size: 10px;">Powered by Substack</small>
+
+    <script>
+        window.CustomSubstackWidget = {
             substackUrl: "sdeysocial.substack.com",
             placeholder: "example@gmail.com",
             buttonText: "Subscribe",
             theme: "custom",
             colors: {
-              primary: "#000000",
-              input: "#FFFFFF",
-              email: "#000000",
-              text: "#FFFFFF",
+                primary: "#000000",
+                input: "#FFFFFF",
+                email: "#000000",
+                text: "#FFFFFF",
             }
-          };
-        </script>
-        <script src="https://substackapi.com/widget.js" async></script>
-    </div>
-    <!-- End of Centered Substack Widget Container -->
+        };
+    </script>
+    <script src="https://substackapi.com/widget.js" async></script>
+</div>
+<!-- End of Centered Substack Widget Container -->
+
+
 
     <footer>
         &copy; Subhodeep Dey 2023 
