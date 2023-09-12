@@ -13,6 +13,15 @@ p {
     font-weight: 400;
 }
 
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background: #EFF1F3;
+}
+
 /* Style the link */
 a {
     color: #0067FB;
@@ -152,4 +161,24 @@ color: #5C6E74;
 font-weight: 400;
 font-size: 1.1rem;
 margin-bottom: 30px;
+}
+
+#the-website {
+    font-weight: 400;
+    color: #163541;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#etcetera {
+    font-weight: 400;
+    color: #163541;
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
