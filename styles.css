@@ -229,8 +229,9 @@ pre code {
         .image-caption {
             font-size: 12px; /* Adjust the font size as needed */
             margin-top: 5px; /* Add some margin to separate it from the image */
-          color: #5C6E74;
-font-weight: 400;
+            color: #5C6E74;
+            font-weight: 400;
+            align-items: center;
         }
 
 
