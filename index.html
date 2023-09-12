@@ -1,14 +1,14 @@
+<!-- Thank you for visiting my site. The design inspiration for this site was taken from https://deadbeef.me/ Also I used a little bit of help from ChatGPT to write some of the codes for this site. Thank you again for visiting. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subhodeep Dey</title>
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         body {
-            padding: 100px; /* Add padding for better spacing on small screens */
+            padding: 100px;
             font-family: 'Roboto Mono', Helvetica, Arial, sans-serif, monospace;
         }
 
@@ -22,83 +22,78 @@
             font-weight: 400;
         }
 
-        /* Style the navigation links */
         nav {
-            text-align: left; /* Align the navigation links to the left */
+            text-align: left;
         }
 
         nav a {
             text-decoration: none;
-            color: blue; /* Blue color for the links */
-            margin-right: 10px; /* Add some spacing between the links */
-            transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+            color: blue;
+            margin-right: 10px;
+            transition: color 0.3s, background-color 0.3s;
         }
 
         nav a:hover {
-            color: white; /* Change text color to white on hover */
-            background-color: blue; /* Add a blue background on hover */
-            padding: 5px 10px; /* Add padding to create a box effect on hover */
-            border-radius: 5px; /* Add rounded corners */
+            color: white;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
-        /* Style the separator span */
         .u-separate::before {
-            content: "/"; /* Display a slash between links */
-            color: black; /* Color of the separator */
+            content: "/";
+            color: black;
         }
 
-        /* Style the footer container */
         footer {
-            display: flex; /* Use flexbox for layout */
-            flex-wrap: wrap; /* Wrap items for smaller screens */
-            justify-content: space-between; /* Space between items */
-            align-items: center; /* Vertically center items */
-            font-size: 15px; /* Font size */
-            font-weight: 100; /* Thin font weight */
-            color: #5C6E74; /* Color */
-            margin-top: 20px; /* Add margin to the top */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 100;
+            color: #5C6E74;
+            margin-top: 20px;
         }
 
-        /* Style the social links */
         .social-links {
-            text-align: right; /* Align to the right */
+            text-align: right;
         }
 
         .social-links a {
             text-decoration: none;
-            color: blue; /* Blue color for the links */
-            margin-left: 5px; /* Reduce the margin to adjust the gap */
-            transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+            color: blue;
+            margin-left: 5px;
+            transition: color 0.3s, background-color 0.3s;
         }
 
         .social-links a:hover {
-            color: white; /* Change text color to white on hover */
-            background-color: blue; /* Add a blue background on hover */
-            padding: 5px 10px; /* Add padding to create a box effect on hover */
-            border-radius: 5px; /* Add rounded corners */
+            color: white;
+            background-color: blue;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
-  @media (max-width: 768px) {
-    body {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
 
-    p {
-        font-size: 16px; /* Adjust font size for better readability */
-    }
+            p {
+                font-size: 16px;
+            }
 
-    footer {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center; /* Center-align the text in the footer */
-    }
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    .social-links {
-        text-align: center; /* Center-align the social links */
-    }
-}
+            .social-links {
+                text-align: center;
+            }
+        }
 
-/* Centered Substack Widget Container (outside of the media query) */
-.widget-container {
+        .widget-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -107,15 +102,15 @@
             height: 50vh;
             margin-top: 20px;
             margin-bottom: 20px;
-            border: 1px solid black; /* Add a border */
-            border-radius: 5px; /* Add rounded corners */
-            padding: 20px; /* Add padding */
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
         }
-      /* Style the subscription text */
+
         .subscription-text {
             font-size: 28px;
             font-weight: bold;
-            margin-bottom: 20px; /* Add margin at the bottom */
+            margin-bottom: 20px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
@@ -129,31 +124,27 @@
         <a href="#">About</a>
     </nav>
 
-    <!-- Centered Substack Widget Container -->
-<div class="widget-container">
-  <strong class="subscription-text">Subscribe to my newsletter</strong>
-    <div id="custom-substack-embed"></div>
-    <small style="font-size: 10px;">Powered by Substack</small>
+    <div class="widget-container">
+        <strong class="subscription-text">Subscribe to my newsletter</strong>
+        <div id="custom-substack-embed"></div>
+        <small style="font-size: 10px;">Powered by Substack</small>
 
-    <script>
-        window.CustomSubstackWidget = {
-            substackUrl: "sdeysocial.substack.com",
-            placeholder: "example@gmail.com",
-            buttonText: "Subscribe",
-            theme: "custom",
-            colors: {
-                primary: "#000000",
-                input: "#FFFFFF",
-                email: "#000000",
-                text: "#FFFFFF",
-            }
-        };
-    </script>
-    <script src="https://substackapi.com/widget.js" async></script>
-</div>
-<!-- End of Centered Substack Widget Container -->
-
-
+        <script>
+            window.CustomSubstackWidget = {
+                substackUrl: "sdeysocial.substack.com",
+                placeholder: "example@gmail.com",
+                buttonText: "Subscribe",
+                theme: "custom",
+                colors: {
+                    primary: "#000000",
+                    input: "#FFFFFF",
+                    email: "#000000",
+                    text: "#FFFFFF",
+                }
+            };
+        </script>
+        <script src="https://substackapi.com/widget.js" async></script>
+    </div>
 
     <footer>
         &copy; Subhodeep Dey 2023 
