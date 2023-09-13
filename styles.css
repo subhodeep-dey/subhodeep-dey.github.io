@@ -300,7 +300,7 @@ margin-bottom: 30px;
 }
 
 /* Responsive styles for input and button */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1160px) {
     .mobile-info {
         display: block; /* Show the text in mobile view */
     }
