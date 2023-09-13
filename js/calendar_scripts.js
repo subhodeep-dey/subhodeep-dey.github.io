@@ -22,3 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Get references to the input field and the form
+    const passcodeInput = document.getElementById('passcode-input');
+    const passcodeForm = document.getElementById('passcode-form');
+
+    // Add a submit event listener to the form
+    passcodeForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Trigger the button click event
+        document.getElementById('submit-passcode').click();
+    });
