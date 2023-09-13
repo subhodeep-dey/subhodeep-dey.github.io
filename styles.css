@@ -130,6 +130,36 @@ footer {
     .social-links {
         text-align: center;
     }
+	/* Add styles for the container in mobile view */
+	.container {
+		display: flex;
+		flex-direction: column; /* Stack elements vertically on mobile */
+		align-items: center; /* Center align items horizontally */
+	}
+
+	/* Style for the paragraph */
+	.about-paragraph {
+		/* Your existing styles for the paragraph */
+		margin-right: 0; /* Remove margin for mobile */
+	}
+
+	/* Style for the image container */
+	.image-container {
+		/* Your existing styles for the image container */
+		text-align: center; /* Center align the image and caption */
+	}
+
+	/* Style for the image */
+	.image-container img {
+		/* Your existing styles for the image */
+	}
+
+	/* Style for the image caption */
+	.image-caption {
+		/* Your existing styles for the caption */
+		text-align: center; /* Center align the caption */
+	}
+
 }
 
 .widget-container {
