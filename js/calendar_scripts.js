@@ -1,14 +1,13 @@
-// Define these variables outside of the DOMContentLoaded event listener
-const passcodeInput = document.getElementById('passcode-input');
-const contentDiv = document.getElementById('content');
-const passcodeContainer = document.getElementById('passcode-container');
-
 document.addEventListener("DOMContentLoaded", function () {
+    const passcodeInput = document.getElementById("passcode-input");
+    const submitButton = document.getElementById("submit-passcode");
+    const contentDiv = document.getElementById("content");
+    const passcodeContainer = document.getElementById("passcode-container");
+    // Define the correct passcode (change this to your desired passcode)
+    const correctPasscode = "subhodeepdey";
     // Add an event listener to the submit button
-    document.getElementById('submit-passcode').addEventListener('click', function () {
+    submitButton.addEventListener("click", function () {
         const enteredPasscode = passcodeInput.value;
-        const correctPasscode = "subhodeepdey"; // Change to your desired passcode
-
         if (enteredPasscode === correctPasscode) {
             // If the entered passcode is correct, show the content
             contentDiv.style.display = "block";
@@ -20,6 +19,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+// Get references to the input field and the form
+    const passcodeInput = document.getElementById('passcode-input');
+    const passcodeForm = document.getElementById('passcode-form');
+
+    // Add a submit event listener to the form
+    passcodeForm.addEventListener('submit', function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Trigger the button click event
+        document.getElementById('submit-passcode').click();
+    });
 
 function togglePasswordVisibility() {
     const passcodeInput = document.getElementById("passcode-input");
