@@ -3,10 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById("submit-passcode");
     const contentDiv = document.getElementById("content");
     const passcodeContainer = document.getElementById("passcode-container");
+
     // Define the correct passcode (change this to your desired passcode)
     const correctPasscode = "subhodeepdey";
+
     // Add an event listener to the submit button
-    submitButton.addEventListener("click", function () {
+    submitButton.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+
         const enteredPasscode = passcodeInput.value;
         if (enteredPasscode === correctPasscode) {
             // If the entered passcode is correct, show the content
