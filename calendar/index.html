@@ -6,6 +6,7 @@
     <title>Calendar | Subhodeep Dey</title>
     <link rel="icon" href="https://subhodeepdey.com/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://subhodeepdey.com/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     /* Add a border to the iframe */
 iframe {
@@ -14,7 +15,8 @@ iframe {
     display: block; /* Ensure block-level display */
     margin: 0 auto; /* Center the iframe horizontally */
 }
-              @media screen and (max-width: 768px) {
+     /* Add responsive styles for the iframe on mobile devices */
+        @media screen and (max-width: 768px) {
             iframe {
                 width: 100%; /* Make the iframe full-width on mobile */
             }
@@ -43,13 +45,18 @@ iframe {
 </div>
     </div>
   <div id="content" style="display: none;">
-  
+  <div class="mobile-info"><p class="about-paragraph">
+        You are viewing this page in mobile. Open in external link <a href="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2F0634f7a08d32e6cbcf7e7de8351f79de7d6fc093bad0a0010d7bca340017d55e%2540group.calendar.google.com%2Fpublic%2Fbasic.ics&title=Subhodeep%20Dey%20Public%20Calendar%20%5BInternal%20Use%5D&tabs=month&tabs=week&tabs=day&tabs=agenda" target="_blank"><i class="fa fa-external-link"></i> </a>
+    </p>
+  </div>
 <iframe id="open-web-calendar" 
     style="background:url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;"
     src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2F0634f7a08d32e6cbcf7e7de8351f79de7d6fc093bad0a0010d7bca340017d55e%2540group.calendar.google.com%2Fpublic%2Fbasic.ics&amp;title=Subhodeep%20Dey%20Public%20Calendar%20%5BInternal%20Use%5D&amp;tabs=month&amp;tabs=week&amp;tabs=day&amp;tabs=agenda"
     sandbox="allow-scripts allow-same-origin allow-top-navigation"
     allowTransparency="true" scrolling="no" 
-    frameborder="0" height="600px" width="100%"></iframe>
+    frameborder="0" height="600px" width="100%">
+      ERROR: Your device doesn't support iframe.
+    </iframe>
   </div>
   
     <footer>
