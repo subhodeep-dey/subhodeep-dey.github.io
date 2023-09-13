@@ -272,6 +272,24 @@ margin-bottom: 30px;
     color: white;
 }
 
+/* CSS for the show password button */
+#show-password {
+    background-color: white; /* Set the initial background color to white */
+    color: black; /* Set the text color to black */
+    border: 1px solid black; /* Add a black border */
+    padding: 5px 10px; /* Add padding for better appearance */
+    margin-left: 10px; 
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Add a transition effect */
+    font-size: 16px;
+}
+
+/* Change the button color to black on hover */
+#show-password:hover {
+    background-color: black;
+    color: white;
+}
+
 /* CSS for the text field */
 #passcode-input {
     border: 1px solid black; /* 1px black border for the text field */
@@ -317,6 +335,10 @@ margin-bottom: 30px;
     }
 
     #submit-passcode {
+        width: 100%; /* Make the button full-width on mobile */
+    }
+
+    #show-password {
         width: 100%; /* Make the button full-width on mobile */
     }
 }
