@@ -1,3 +1,4 @@
 # subhodeep-dey.github.io
 
-#Resume link: subhodeep-dey.github.io/Subhodeep_Dey.pdf
+Source code of my personal website.
+Link: https://subhodeepdey.com/
