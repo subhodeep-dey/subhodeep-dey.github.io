@@ -1,27 +1,35 @@
-// Get references to the input field and the form
+// Define these variables outside of the DOMContentLoaded event listener
 const passcodeInput = document.getElementById('passcode-input');
-const passcodeForm = document.getElementById('passcode-form');
+const contentDiv = document.getElementById('content');
+const passcodeContainer = document.getElementById('passcode-container');
 
-// Add a submit event listener to the form
-passcodeForm.addEventListener('submit', function (e) {
-    e.preventDefault(); // Prevent the default form submission
+document.addEventListener("DOMContentLoaded", function () {
+    // Add an event listener to the submit button
+    document.getElementById('submit-passcode').addEventListener('click', function () {
+        const enteredPasscode = passcodeInput.value;
+        const correctPasscode = "subhodeepdey"; // Change to your desired passcode
 
-    // Trigger the button click event
-    document.getElementById('submit-passcode').click();
+        if (enteredPasscode === correctPasscode) {
+            // If the entered passcode is correct, show the content
+            contentDiv.style.display = "block";
+            passcodeContainer.style.display = "none"; // Hide the passcode input
+        } else {
+            // If the entered passcode is incorrect, display an error message
+            alert("Incorrect passcode. Please try again.");
+            passcodeInput.value = ""; // Clear the input field
+        }
+    });
 });
 
-// Add an event listener to the submit button
-document.getElementById('submit-passcode').addEventListener('click', function () {
-    const enteredPasscode = passcodeInput.value;
-    const correctPasscode = "subhodeepdey"; // Change to your desired passcode
+function togglePasswordVisibility() {
+    const passcodeInput = document.getElementById("passcode-input");
+    const showPasswordButton = document.getElementById("show-password");
 
-    if (enteredPasscode === correctPasscode) {
-        // If the entered passcode is correct, show the content
-        contentDiv.style.display = "block";
-        passcodeContainer.style.display = "none"; // Hide the passcode input
+    if (passcodeInput.type === "password") {
+        passcodeInput.type = "text";
+        showPasswordButton.textContent = "Hide Password";
     } else {
-        // If the entered passcode is incorrect, display an error message
-        alert("Incorrect passcode. Please try again.");
-        passcodeInput.value = ""; // Clear the input field
+        passcodeInput.type = "password";
+        showPasswordButton.textContent = "Show Password";
     }
-});
+}
