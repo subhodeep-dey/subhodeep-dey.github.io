@@ -297,6 +297,7 @@ margin-bottom: 30px;
     text-align: center; /* Center align the text */
     font-size: 12px; /* Adjust font size as needed */
     margin-bottom: 10px; /* Add margin at the bottom of the text */
+    white-space: pre-line;
 }
 
 /* Responsive styles for input and button */
