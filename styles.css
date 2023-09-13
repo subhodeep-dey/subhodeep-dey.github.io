@@ -289,8 +289,21 @@ margin-bottom: 30px;
     margin-top: 10px; /* Add margin to separate from the heading */
 }
 
+/* Styles for the small text in mobile view */
+.mobile-info {
+    display: none; /* Initially hide the text */
+    background-color: #f0f0f0; /* Background color */
+    padding: 5px; /* Add some padding */
+    text-align: center; /* Center align the text */
+    font-size: 12px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Add margin at the bottom of the text */
+}
+
 /* Responsive styles for input and button */
 @media screen and (max-width: 768px) {
+    .mobile-info {
+        display: block; /* Show the text in mobile view */
+    }
     .input-row {
         flex-direction: column; /* Stack elements vertically in mobile view */
     }
