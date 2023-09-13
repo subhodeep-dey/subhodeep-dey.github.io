@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
             passcodeInput.value = ""; // Clear the input field
         }
     });
+
+    // Add an event listener for the Enter key press in the text field
+    passcodeInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            // Prevent the default form submission
+            e.preventDefault();
+            
+            // Trigger a click event on the submit button
+            submitButton.click();
+        }
+    });
 });
 
 function togglePasswordVisibility() {
