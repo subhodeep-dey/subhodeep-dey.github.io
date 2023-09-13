@@ -336,9 +336,12 @@ margin-bottom: 30px;
 
     #submit-passcode {
         width: 100%; /* Make the button full-width on mobile */
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
 
     #show-password {
         width: 100%; /* Make the button full-width on mobile */
+        margin-left: 0px;
     }
 }
